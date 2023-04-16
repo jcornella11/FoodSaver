@@ -52,8 +52,20 @@
         android:textColor="@color/black"
         />
 
-    <DatePicker
+    <TextView
+        android:id="@+id/expirationView"
         android:layout_below="@+id/editTextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Expiration Date:"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        />
+
+    <DatePicker
+        android:layout_below="@+id/expirationView"
         android:id="@+id/expirationDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -88,7 +100,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -99,12 +111,12 @@
         android:textColor="@color/black"
         />
 
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_below="@id/textView1"
+        android:layout_below="@id/textView3"
         android:choiceMode="multipleChoice"/>
-
 
 </RelativeLayout>
